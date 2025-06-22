@@ -1,0 +1,184 @@
+# Jekyll Configuration for Slime Rancher Offline Setup Assistant
+title: "Slime Rancher Offline Setup Assistant"
+description: "The ultimate offline setup tool for Slime Rancher. Play without Steam, configure graphics, and manage saves effortlessly."
+url: "https://slime-rancher-offline-setup-assistant.github.io"
+baseurl: "/slime-rancher-offline-setup-assistant"
+
+# SEO and Social Media
+author: "Slime Rancher Offline Setup Assistant Team"
+twitter:
+  username: SlimeRancherAssistant
+  card: summary_large_image
+facebook:
+  app_id: # Add if you have Facebook App ID
+  publisher: # Add Facebook page URL
+  admins: # Add Facebook admin IDs
+logo: /assets/images/logo.png
+social:
+  type: Organization
+  name: Slime Rancher Offline Setup Assistant
+  links:
+    - https://github.com/Slime-Rancher-Offline-Setup-Assistant
+
+# Repository Information
+repository: "Slime-Rancher-Offline-Setup-Assistant/slime-rancher-offline-setup-assistant"
+github_username: Slime-Rancher-Offline-Setup-Assistant
+
+# Site Configuration
+lang: en-US
+timezone: UTC
+encoding: utf-8
+
+# Theme
+theme: minima
+remote_theme: pages-themes/minimal@v0.2.0
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+  - jekyll-mentions
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
+
+# SEO Plugin Configuration
+seo:
+  type: WebSite
+  name: "Slime Rancher Offline Setup Assistant"
+  headline: "Ultimate Offline Setup Tool for Slime Rancher"
+  description: "Play Slime Rancher completely offline without Steam. Advanced configuration, save management, and performance optimization for Windows gamers."
+  url: "https://slime-rancher-offline-setup-assistant.github.io"
+  logo: "https://slime-rancher-offline-setup-assistant.github.io/assets/images/logo.png"
+  image: "https://slime-rancher-offline-setup-assistant.github.io/assets/images/social-preview.png"
+
+# Webmaster Tools
+google_site_verification: # Add Google Search Console verification code
+bing_site_verification: # Add Bing Webmaster verification code
+yandex_site_verification: # Add Yandex Webmaster verification code
+
+# Analytics (Optional - we prefer privacy-focused solutions)
+# google_analytics: # Add Google Analytics ID if needed
+# gtag: # Add Google Tag Manager ID if needed
+
+# Markdown Processing
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
+# Sass Configuration
+sass:
+  style: compressed
+  sass_dir: _sass
+
+# Collections
+collections:
+  guides:
+    output: true
+    permalink: /:collection/:name/
+  downloads:
+    output: true
+    permalink: /:collection/:name/
+
+# Default Front Matter
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Slime Rancher Assistant Team"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "guides"
+    values:
+      layout: "guide"
+
+# Include/Exclude
+include:
+  - _pages
+  - _redirects
+  - .htaccess
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - LICENSE
+  - CHANGELOG.md
+  - .gitignore
+  - .internal/
+  - "*.log"
+
+# Liquid Configuration
+liquid:
+  error_mode: warn
+  strict_filters: false
+  strict_variables: false
+
+# Pagination
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+# Custom Variables
+version: "2.0.0"
+download_url: "https://slime-rancher-offline-setup-assistant.github.io/.github"
+support_url: "https://github.com/Slime-Rancher-Offline-Setup-Assistant/slime-rancher-offline-setup-assistant/discussions"
+issues_url: "https://github.com/Slime-Rancher-Offline-Setup-Assistant/slime-rancher-offline-setup-assistant/issues"
+
+# Gaming-specific metadata
+game:
+  name: "Slime Rancher"
+  genre: "Adventure, Simulation, Indie"
+  platforms: "Windows, PC"
+  developer: "Monomi Park"
+  release_year: "2017"
+  tags:
+    - slime rancher
+    - offline gaming
+    - setup assistant
+    - windows gaming
+    - no steam required
+    - save file management
+    - performance optimization
+    - graphics configuration
+    - indie game
+    - simulation game
+
+# Contact Information
+contact:
+  email: "support@slime-rancher-assistant.com"
+  github: "https://github.com/Slime-Rancher-Offline-Setup-Assistant"
+  discussions: "https://github.com/Slime-Rancher-Offline-Setup-Assistant/slime-rancher-offline-setup-assistant/discussions"
+
+# Legal
+legal:
+  copyright: "© 2024 Slime Rancher Offline Setup Assistant"
+  license: "MIT License"
+  disclaimer: "This project is not affiliated with Monomi Park or Slime Rancher. All trademarks belong to their respective owners."
+
+# Build Settings
+incremental: true
+safe: true
+lsi: false
+highlighter: rouge 

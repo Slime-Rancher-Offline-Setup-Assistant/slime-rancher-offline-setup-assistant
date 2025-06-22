@@ -1,0 +1,299 @@
+# Slime Rancher Offline Setup Assistant - .gitignore
+
+# ========================================
+# 🔒 SECURITY & CREDENTIALS
+# ========================================
+.internal/
+*_CREDENTIALS.md
+*_TOKEN.txt
+*.key
+*.pem
+secrets/
+.env
+.env.local
+.env.production
+
+# ========================================
+# 🎮 GAME FILES & ASSETS  
+# ========================================
+# Game binaries and assets (too large for git)
+game-files/
+slime-rancher/
+assets/game/
+*.unitypackage
+
+# Save files and user data
+saves/
+savedata/
+user-profiles/
+*.save
+*.dat
+
+# Temporary game files
+*.tmp
+*.temp
+game-cache/
+shader-cache/
+
+# ========================================
+# 💻 WINDOWS SPECIFIC
+# ========================================
+# Windows image file caches
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# ========================================
+# 🛠️ BUILD & DISTRIBUTION
+# ========================================
+# Build directories
+build/
+dist/
+out/
+release/
+releases/
+
+# Compiled binaries
+*.exe
+*.dll
+*.so
+*.dylib
+*.app
+
+# Package files
+*.zip
+*.rar
+*.7z
+*.tar.gz
+
+# Installer files
+setup.exe
+installer/
+*-installer.*
+
+# ========================================
+# 📝 DEVELOPMENT TOOLS
+# ========================================
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Visual Studio
+.vs/
+*.vcxproj.user
+*.vspscc
+*.vssscc
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ========================================
+# 📊 TESTING & ANALYSIS
+# ========================================
+# Test results
+test-results/
+coverage/
+*.test
+*.spec
+
+# Performance data
+*.perf
+profiling/
+benchmarks/
+
+# ========================================
+# 🌐 WEB & DOCS
+# ========================================
+# Node modules (if using web components)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Jekyll & GitHub Pages
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# ========================================
+# 💾 BACKUP & TEMPORARY FILES
+# ========================================
+# Backup files
+*.bak
+*.backup
+*.old
+backups/
+backup-*/
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+temporary/
+
+# Auto-generated files
+auto-generated/
+generated/
+
+# ========================================
+# 🎯 PROJECT SPECIFIC
+# ========================================
+# Setup assistant temporary files
+setup-temp/
+extraction-temp/
+download-cache/
+
+# User configuration (contains personal settings)
+user-config.json
+personal-settings.ini
+user-preferences.xml
+
+# Hardware detection cache
+hardware-cache/
+device-info.cache
+
+# Update files
+updates/
+patches/
+update-cache/
+
+# ========================================
+# 📱 MOBILE & CROSS-PLATFORM
+# ========================================
+# iOS
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Android
+*.apk
+*.aab
+*.ap_
+
+# Unity (if used for setup UI)
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+# ========================================
+# 🔄 VERSION CONTROL
+# ========================================
+# Git
+.git/
+*.orig
+*.rej
+
+# SVN
+.svn/
+
+# ========================================
+# 🌍 LOCALIZATION
+# ========================================
+# Translation work files
+*.pot
+*.po~
+*.mo
+
+# ========================================
+# 📊 ANALYTICS & METRICS (We don't use these)
+# ========================================
+# Analytics files (just in case)
+analytics/
+metrics/
+*.analytics
+*.telemetry
+
+# ========================================
+# 🔍 SYSTEM FILES
+# ========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+.nfs*
+
+# ========================================
+# 🎮 GAMING SPECIFIC
+# ========================================
+# Game mod files (if too large)
+mods/
+modifications/
+*.mod
+
+# Game configuration backups
+config-backup/
+settings-backup/
+
+# Performance logs
+performance-logs/
+fps-logs/
+*.perf
+
+# Controller configuration files (may contain personal mappings)
+controller-configs/
+input-mappings/
+
+# ========================================
+# 📄 DOCUMENTATION BUILD
+# ========================================
+# Generated documentation
+docs/_build/
+docs/build/
+*.pdf
+*.epub
+
+# API documentation
+api-docs/
+*-api.md
+
+# ========================================
+# 🚀 DEPLOYMENT
+# ========================================
+# Deployment configs
+deploy/
+deployment/
+.deploy/
+
+# Cloud configs
+.aws/
+.azure/
+.gcp/
+
+# ========================================
+# END OF .gitignore
+# ======================================== .internal/
+UNIVERSAL_SEO_TOOLKIT.md
